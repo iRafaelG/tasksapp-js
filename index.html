@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>JS Tasks App</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a href="/" class="navbar-brand">JS Tasks App</a>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <form action="" method="post" id="formTask">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="title"
+                    placeholder="Add task"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    rows="8" cols="80"
+                    id="description"
+                    placeholder="Description"
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Save</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+            <div id="task"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
